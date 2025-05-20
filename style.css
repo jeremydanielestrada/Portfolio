@@ -1,0 +1,91 @@
+/* Custom CSS for Jeremy's Portfolio */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom transitions */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Skill cards hover effect */
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project cards hover effect */
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Certificate cards hover effect */
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Button hover animations */
+.rounded-full {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-full:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input focus effects */
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Active navigation link */
+.active-link {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
